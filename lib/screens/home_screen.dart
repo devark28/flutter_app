@@ -10,6 +10,8 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
           child: ElevatedButton(
               onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const DetailsScreen()));
               },
               child: const Text("Next Screen"))),
     );
